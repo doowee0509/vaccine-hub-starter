@@ -39,7 +39,7 @@ export default function Portal({ user, setAppState }) {
   return (
     <div className="Portal">
       <div className="content">
-        {isAuthenticated ? <h1>Welcome, {user.firstName}!</h1> : null}
+        {isAuthenticated ? <h1>Welcome, {user.first_name}!</h1> : null}
 
         <div className="card">
           <div className="header">
