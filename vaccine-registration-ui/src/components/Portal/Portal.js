@@ -1,5 +1,4 @@
 import { Link, useNavigate } from "react-router-dom"
-import moment from "moment"
 import medicalCare from "../../assets/undraw_medical_care_deep_blue.svg"
 
 import "./Portal.css"

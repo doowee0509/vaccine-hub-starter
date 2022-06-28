@@ -4,13 +4,6 @@ import axios from "axios"
 import MedicalResearch from "../MedicalResearch/MedicalResearch"
 import "./Cancel.css"
 
-const locationOptions = [
-{ key: 1, label: "Local Clinic", value: "local clinic" },
-{ key: 2, label: "Regional Hospital", value: "regional hospital" },
-{ key: 3, label: "Care Center", value: "care center" },
-{ key: 4, label: "Department of Health", value: "department of health" },
-]
-
 export default function Signup({ setAppState }) {
 const navigate = useNavigate()
 const [isLoading, setIsLoading] = useState(false)
