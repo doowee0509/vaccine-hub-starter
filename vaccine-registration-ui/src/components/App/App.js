@@ -5,6 +5,8 @@ import Navbar from "../Navbar/Navbar"
 import Register from "../Register/Register"
 import Login from "../Login/Login"
 import Portal from "../Portal/Portal"
+import Update from "../Update/Update"
+import Cancel  from "../Cancel/Cancel"
 import "./App.css"
 
 export default function App() {
@@ -21,6 +23,14 @@ export default function App() {
           <Route
             path="/portal"
             element={<Portal setAppState={setAppState} appState={appState} user={appState?.user} />}
+          />
+          <Route
+            path="/update"
+            element={<Update setAppState={setAppState} appState={appState} user={appState?.user} />}
+          />
+          <Route
+            path="/cancel"
+            element={<Cancel setAppState={setAppState} appState={appState} user={appState?.user} />}
           />
         </Routes>
       </BrowserRouter>

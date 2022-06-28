@@ -31,10 +31,6 @@
   font-size: 30px;
   font-weight: 800;
   margin-bottom: 40px;
-}
-.Portal .card .title.green {
-  background: rgba(0, 156, 44, 0.1);
-  color: rgba(0, 156, 44, 1);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -43,6 +39,21 @@
   margin: 20px 0;
   font-size: 18px;
   font-weight: 600;
+}
+.Portal .card .title.green {
+  background: rgba(0, 156, 44, 0.1);
+  color: rgba(0, 156, 44, 1);
+}
+.Portal .card .title.red {
+  background: rgba(156, 0, 0, 0.1);
+  color: rgb(155, 0, 0);
+}
+.Portal .card .title.blue {
+  background: rgba(10, 0, 156, 0.1);
+  color: rgb(10, 0, 156);
+}
+.Portal .card .title.hidden {
+  display: none;
 }
 .Portal .card .footer {
   margin-top: auto;

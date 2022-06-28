@@ -24,4 +24,30 @@ router.post("/register", async function (req, res, next) {
     }
 })
 
+router.post("/update", async function (req, res, next) {
+    try {
+        //get required information and create new user in the database
+
+        const user = await User.update(req.body)
+        console.log(user)
+        return res.status(201).json({ user })
+    } catch (err) {
+        next(err)
+    }
+})
+
+router.post("/cancel", async function (req, res, next) {
+    try {
+        //get required information and create new user in the database
+
+        await User.cancel(req.body)
+        return res.status(201).json({user: {
+            email: "",
+            password: ""
+        }})
+    } catch (err) {
+        next(err)
+    }
+})
+
 module.exports = router
