@@ -1,3 +1,4 @@
+const {PORT} = require("../config")
 const express = require("express")
 const {BadRequestError, NotFoundError} = require("./utils/errors")
 const morgan = require("morgan")
@@ -22,8 +23,6 @@ app.get((err, req, res, next) => {
     })
 })
 
-const port = process.env.PORT || 3001
-
-app.listen(port, () => {
-    console.log(`🚀 Server listening on port ` + port)
+app.listen(PORT, () => {
+    console.log(`🚀 Server listening on port ` + PORT)
 })
